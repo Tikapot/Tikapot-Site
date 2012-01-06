@@ -37,14 +37,6 @@ a:hover {
 	box-shadow: 3px 3px 2px #CCC;
 }
 
-#content #content_header {
-	text-align: left;
-	width: 430px;
-	margin-left: 15px;
-	position: absolute;
-	top: -20px;
-}
-
 #content #content_footer {
 	text-align: center;
 	width: 630px;
