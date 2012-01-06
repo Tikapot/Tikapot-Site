@@ -19,6 +19,3 @@
  
 <body>
 	<div id="content">
-		<div id="content_header">
-			<!--<a href="https://github.com/Tikapot/Tikapot/tarball/master"><?php echo $request->i18n['tpdownload']; ?></a>-->
-		</div>
