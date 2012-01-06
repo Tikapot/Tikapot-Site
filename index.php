@@ -6,7 +6,7 @@
  * For license information please see LICENSE
  */
 
-define("site_version", '1.0');
+define("site_version", '1.01');
 define("page_def", 'tpage');
 define("home_dir", dirname(__FILE__) . '/');
 define("home_url", substr($_SERVER['SCRIPT_NAME'], 0, strrpos($_SERVER['SCRIPT_NAME'], "/") + 1));

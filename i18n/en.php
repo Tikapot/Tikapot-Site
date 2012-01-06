@@ -54,16 +54,50 @@ $i18n_data = array(
 	"welcometp" => "Welcome to Tikapot!",
 	"welcometp_desc" => "Tikapot is a brand new PHP framework built, on the latest technologies, to be lightweight and extremely flexible<br />Want to find out more?...",
 	"welcometp_desc2" => "If you need some help getting started why not try one of these?",
-	"welcometp_desc3" => "Not sure if Tikapot is right for you? Check out our showcase!",
+	"welcometp_desc3" => "Not sure if Tikapot is right for you? Lets see if we can persuade you...",
 	"tpsite" => "Tikapot Website",
 	"tp_home" => "Home Page",
 	"home" => "Home",
-	"tpdownload" => "Download the Latest Version (RC3)!",
+	"tpdownload" => "Download the Latest Version (v1.0)!",
 	"poweredby" => "Powered By",
 	"copy" => "Copyright &copy; Tikapot.com",
 	
+	"tutorials" => "Tutorials",
+	"appdes" => "App Designer",
+	"features" => "Feature List",
+	"planned" => "See whats planned for Tikapot \"Marzipan\" (version 1.1)",
+	"showcase" => "Showcase",
+	
 	/* App Designer */
 	"tp_appdesigner" => "Application Designer",
+	
+	/* Features */
+	"tp_features" => "Features",
+	"features_list" => "<ul>
+				  	<li>Easy To Learn!</li>
+				  	<li>Powerful</li>
+				  	<li>Lightweight</li>
+				  	<li>Model-level Database Abstraction</li>
+				  	<li>Forms System</li>
+				  	<li>Views and Url Handlers</li>
+				  	<li>Session handler</li>
+				  	<li>Cache</li>
+				  	<li>i18n</li>
+				  	<li>Security Features<ul>
+				  		<li>Automatic SQL Injection handling</li>
+				  		<li>XSS detection</li>
+				  		<li>CSRF protection</li>
+				  	</ul></li>
+				  	<li>CAPTCHA fields</li>
+				  	<li>User authentication system</li>
+				  </ul>",
+	
+	/* Marzipan */
+	"tp_marzipan" => "Marzipan Feature List",
+	"marzipan_list" => "<ul>
+				  	<li>Very simple, optional, template tags</li>
+				  	<li>More Coming Soon!</li>
+				  </ul>",
 	
 	/* Showcase */
 	"tp_showcase" => "Tikapot Showcase",
@@ -126,7 +160,7 @@ require_once(home_dir . "apps/hello/urls.php");
 new HomeView("/");
 new View("/home/", home_dir . "apps/hello/templates/index.php");
 ?&gt;</pre>
-<p>Thats it! Anyone who visits the URL "/home/" (for example: "http://www.tikapot.com/home/") will see our new web page!</p>',
+<p>Thats it! Anyone who visits the URL "/home/" (for example: "http://www.tikapot.com/home/") will see your new web page!</p>',
 	"tutorial5" => "Models",
 	"tutorial5d" => "",
 	"tutorial6" => "Forms",

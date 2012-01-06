@@ -29,7 +29,7 @@ class i18n implements Iterator, Countable, arrayaccess
 			if (!preg_match("/^[a-z]/", $name)) {
 				$name = "i" . $name;
 			}
-			$val = str_replace("\"", "\\\"", $val);
+			$val = str_replace("'", "\\'", $val);
 			$val = str_replace("\n", "\\n", $val);
 			$js .= "i18n." . $name . " = '".$val."';\n";
 		}

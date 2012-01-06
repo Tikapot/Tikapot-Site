@@ -60,6 +60,10 @@ a:hover {
 	list-style: none;
 }
 
+.menu li {
+	padding-top: 2px;
+}
+
 .breadcrumbs {
 	text-align: left;
 	margin-top: 0;
