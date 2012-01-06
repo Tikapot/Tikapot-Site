@@ -6,11 +6,20 @@
 
 class i18n implements Iterator, Countable, arrayaccess
 {
-	private $map, $position;
+	private $map;
 	
 	public function __construct($map) {
-		$this->map = $map;
-		$this->position = 0;
+		if (is_array($map)) {
+			$this->map = $map;
+		}
+	}
+	
+	public function __get($name) {
+		return $this->map[$name];
+	}
+
+	public function __isset($name) {
+		return isset($this->map[$name]);
 	}
 
 	public function buildJS() {
@@ -21,7 +30,8 @@ class i18n implements Iterator, Countable, arrayaccess
 				$name = "i" . $name;
 			}
 			$val = str_replace("\"", "\\\"", $val);
-			$js .= "i18n." . $name . " = \"".$val."\";\n";
+			$val = str_replace("\n", "\\n", $val);
+			$js .= "i18n." . $name . " = '".$val."';\n";
 		}
 		return $js;
 	}
@@ -32,23 +42,24 @@ class i18n implements Iterator, Countable, arrayaccess
 	
 	/* Iterator */
 	public function rewind() {
-		$this->position = 0;
+		reset($this->map);
 	}
 	
 	public function current() {
-		return $this->map[$this->position];
+		return current($this->map);
 	}
 	
 	public function key() {
-		return $this->position;
+		return key($this->map);
 	}
 	
 	public function next() {
-		++$this->position;
+		return next($this->map);
 	}
 	
 	public function valid() {
-		return isset($this->map[$this->position]);
+		$key = key($this->map);
+		return $key !== NULL && $key !== FALSE;
 	}
 	/* End Iterator */
 	

@@ -3,7 +3,7 @@ $title = $request->i18n['tp_home'] . " | Tikapot";
 include("includes/header.php");
 ?>
 
-<img src="<?php echo home_url; ?>apps/tikapot/media/images/logo.png" alt="Tikapot Logo" />
+<a href="<?php echo home_url; ?>"><img src="<?php echo home_url; ?>apps/tikapot/media/images/logo.png" alt="Tikapot Logo" /></a>
 <h1><?php echo $request->i18n['welcometp']; ?></h1>
 <p><?php echo $request->i18n['welcometp_desc']; ?></p>
 <ul class="menu">

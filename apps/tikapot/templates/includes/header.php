@@ -10,7 +10,7 @@
   <?php
   // Get Media Manager to handle our CSS
   include_once(home_dir . "framework/media.php");
-  $manager = new MediaManager("style".microtime(true), home_dir . "apps/tikapot/media/", home_url . "apps/tikapot/media/");
+  $manager = new MediaManager("style" . site_version, home_dir . "apps/tikapot/media/", home_url . "apps/tikapot/media/");
   $manager->add_file(home_dir . "apps/tikapot/media/css/style.css");
   
   print '<link rel="stylesheet" href="'.$manager->build_css().'" type="text/css" media="screen" />';
