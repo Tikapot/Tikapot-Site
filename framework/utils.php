@@ -34,15 +34,18 @@ function get_named_class($class) {
 		global $app_paths;
 		foreach ($app_paths as $app_path) {
 			$path = home_dir . $app_path . '/';
-			while (($entry = dir($path)->read())  !== false) {
-				if ($entry !== "." && $entry !== "..") {
-					$file = $path . $entry . "/models.php";
-					if (is_file($file)) {
-						include($file);
-						if (class_exists($class))
-							break;
+			if ($handle = opendir($path)) {
+				while (($entry = readdir($handle))  !== false) {
+					if ($entry !== "." && $entry !== "..") {
+						$file = $path . $entry . "/models.php";
+						if (is_file($file)) {
+							include_once($file);
+							if (class_exists($class))
+								break;
+						}
 					}
 				}
+				closedir($handle);
 			}
 		}
 	}

@@ -95,7 +95,12 @@ $i18n_data = array(
 	/* Marzipan */
 	"tp_marzipan" => "Marzipan Feature List",
 	"marzipan_list" => "<ul>
-				  	<li>Very simple, optional, template tags</li>
+				  	<li>Model and System Upgrade Facility</li>
+				  	<li>New views: BasicHTML, Template</li>
+				  	<li>Simple, optional, template tags<ul>
+				  		<li>{{variable or constant}}</li>
+				  	</ul></li>
+				  	<li>Cookie Handler</li>
 				  	<li>More Coming Soon!</li>
 				  </ul>",
 	

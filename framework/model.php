@@ -292,6 +292,7 @@ abstract class Model
 			$res = $db->query($this->db_create_query($db));
 			foreach($this->db_create_extra_queries_post($db, $table_name) as $query)
 				$db->query($query);
+			ContentType::of($this->get_content_type());
 			return $res;
 		}
 		return true;
@@ -306,7 +307,7 @@ abstract class Model
 			return false;
 		$table_name = $this->get_table_name();
 		$fields = $this->get_fields();
-		$columns = $db->get_columns($this->get_table_name());
+		$columns = $db->get_columns($table_name);
 		foreach ($columns as $column => $type) {
 			if (!array_key_exists($column, $fields))
 				throw new TableValidationException($column . " ".$GLOBALS["i18n"]["nolongerpart"]." " . $table_name);
