@@ -7,7 +7,7 @@ include("includes/header.php");
 <h1><?php echo $request->i18n['welcometp']; ?></h1>
 <p><?php echo $request->i18n['welcometp_desc']; ?></p>
 <ul class="menu">
-	<li><a href="https://github.com/downloads/Tikapot/Tikapot/Tikapot1.0.tar.gz">&raquo; <?php echo $request->i18n['tpdownload']; ?> &laquo;</a></li>
+	<li><a href="https://github.com/downloads/Tikapot/Tikapot/Tikapot1.01.tar.gz">&raquo; <?php echo $request->i18n['tpdownload']; ?> &laquo;</a></li>
 </ul>
 <div class="pad1">
 	<p><?php echo $request->i18n['welcometp_desc2']; ?></p>

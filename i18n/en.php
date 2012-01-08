@@ -58,7 +58,7 @@ $i18n_data = array(
 	"tpsite" => "Tikapot Website",
 	"tp_home" => "Home Page",
 	"home" => "Home",
-	"tpdownload" => "Download the Latest Version (v1.0)!",
+	"tpdownload" => "Download the Latest Version (v1.01)!",
 	"poweredby" => "Powered By",
 	"copy" => "Copyright &copy; Tikapot.com",
 	
